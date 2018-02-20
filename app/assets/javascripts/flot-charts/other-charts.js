@@ -1,6 +1,7 @@
 'use strict';
 
-$(document).ready(function () {
+$( document ).on('turbolinks:load', function() {
+// $(document).ready(function () {
     /*---------------------------------------
         Peity
     ----------------------------------------*/
@@ -33,7 +34,7 @@ $(document).ready(function () {
             });
         });
     }
- 
+
     // Pie
     if($('.peity-pie')[0]) {
         $('.peity-pie').each(function() {

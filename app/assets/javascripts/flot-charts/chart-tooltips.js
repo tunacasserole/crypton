@@ -1,6 +1,7 @@
 'use strict';
+$( document ).on('turbolinks:load', function() {
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // Tooltips for Flot Charts
     if ($('.flot-chart')[0]) {

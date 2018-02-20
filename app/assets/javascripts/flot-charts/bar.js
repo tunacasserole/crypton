@@ -1,6 +1,8 @@
 'use strict';
 
-$(document).ready(function(){
+$( document ).on('turbolinks:load', function() {
+
+// $(document).ready(function(){
 
     // Chart Data
     var barChartData = [

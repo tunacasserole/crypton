@@ -2,7 +2,9 @@
 
   root to: 'welcome#index'
 
-    devise_for :users, controllers: {
+  # resources :users
+
+  devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',
     registrations: 'users'

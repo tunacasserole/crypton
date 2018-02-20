@@ -1,6 +1,7 @@
 'use strict';
+$( document ).on('turbolinks:load', function() {
 
-$(document).ready(function(){
+// $(document).ready(function(){
     // Make some sample data
     var pieData = [
         {data: 1, color: 'rgba(255,255,255,0.25)', label: 'Toyota'},
@@ -8,7 +9,7 @@ $(document).ready(function(){
         {data: 3, color: 'rgba(255,255,255,0.75)', label: 'Hyundai'},
         {data: 5, color: '#fff', label: 'Daihatsu'}
     ];
-    
+
     // Pie Chart
     if($('.flot-pie')[0]){
         $.plot('.flot-pie', pieData, {
@@ -28,7 +29,7 @@ $(document).ready(function(){
             }
         });
     }
-    
+
     // Donut Chart
     if($('.flot-donut')[0]){
         $.plot('.flot-donut', pieData, {
@@ -36,7 +37,7 @@ $(document).ready(function(){
                 pie: {
                     innerRadius: 0.5,
                     show: true,
-                    stroke: { 
+                    stroke: {
                         width: 0
                     }
                 }
