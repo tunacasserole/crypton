@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
 
   before_action :authenticate_user!
-  # protect_from_forgery with: :exception
+  protect_from_forgery with: :exception
 
   # generic helper responsibe for performing a full search including support
   # for sorting, paging and filtering.
