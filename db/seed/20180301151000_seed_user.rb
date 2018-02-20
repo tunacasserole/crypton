@@ -1,0 +1,1 @@
+User.create(first_name: 'Aaron', last_name: 'Henderson', email: 'aaron@buildit.io', password: 'welcome', password_confirmation: 'welcome')

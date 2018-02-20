@@ -1,0 +1,4 @@
+module Crypton::Globals
+
+
+end

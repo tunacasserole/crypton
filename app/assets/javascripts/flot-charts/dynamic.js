@@ -8,28 +8,28 @@ $(document).ready(function(){
 
     function dynamicChartData() {
         if (data.length > 0)
-            data = data.slice(1);
+        data = data.slice(1);
 
-        while (data.length < totalPoints) {
+    while (data.length < totalPoints) {
 
-            var prev = data.length > 0 ? data[data.length - 1] : 50,
-                y = prev + Math.random() * 10 - 5;
-            if (y < 0) {
-                y = 0;
-            } else if (y > 90) {
-                y = 90;
-            }
-
-            data.push(y);
+        var prev = data.length > 0 ? data[data.length - 1] : 50,
+        y = prev + Math.random() * 10 - 5;
+        if (y < 0) {
+            y = 0;
+        } else if (y > 90) {
+            y = 90;
         }
 
-        var res = [];
-        for (var i = 0; i < data.length; ++i) {
-            res.push([i, data[i]])
-        }
-
-        return res;
+        data.push(y);
     }
+
+    var res = [];
+    for (var i = 0; i < data.length; ++i) {
+        res.push([i, data[i]])
+    }
+
+    return res;
+}
 
     // Chart Options
     var dynamicChartOptions = {
@@ -92,7 +92,6 @@ $(document).ready(function(){
     // Create Chart
     if ($('.flot-dynamic')[0]) {
         var plot = $.plot('.flot-dynamic', [ dynamicChartData() ], dynamicChartOptions);
-    }
 
     // Update function
     var updateInterval = 30;
@@ -104,4 +103,5 @@ $(document).ready(function(){
         setTimeout(chartUpdate, updateInterval);
     }
     chartUpdate();
+}
 });

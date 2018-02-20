@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Crypton Studio</title>
+  <title>Crypton Crypton</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "application.css", media: "all", "data-turbolinks-track" => :reload %>
   <%= javascript_include_tag "application.js", "data-turbolinks-track" => :reload  %>
@@ -14,13 +14,6 @@
   <main class="main">
 
     <%= render partial: 'core/header' %>
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-
-
-
 
     <%= render partial: 'core/menu' %>
 
@@ -45,16 +38,16 @@
 <script>
   $(document).ready(function(){
 
-    <% if flash[:notice].present? %>
-    notify('<%= flash[:notice] %>', 'info');
+    <% if flash[:notice] %>
+    notify('top','left', 'fa fa-check', 'inverse', '<%= flash[:notice] %>');
     <% end %>
 
-    <% if flash[:success].present? %>
-    notify('<%= flash[:success] %>', 'success');
+    <% if flash[:success] %>
+    notify('top','left', 'fa fa-check', 'inverse', '<%= flash[:success] %>');
     <% end %>
 
-    <% if flash[:error].present? %>
-    notify('<%= flash[:error] %>', 'danger');
+    <% if flash[:error] %>
+    notify('top','left', 'fa fa-check', 'inverse', '<%= flash[:error] %>');
     <% end %>
 
   });
