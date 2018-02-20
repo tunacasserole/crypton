@@ -15,6 +15,13 @@
 
     <%= render partial: 'core/header' %>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+
+
+
+
     <%= render partial: 'core/menu' %>
 
     <%= render partial: 'core/themes' %>
@@ -23,7 +30,7 @@
 
       <%= yield %>
 
-    <%= render partial: 'core/footer' %>
+      <%= render partial: 'core/footer' %>
 
     </section>
 
