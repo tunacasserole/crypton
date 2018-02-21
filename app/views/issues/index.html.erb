@@ -1,0 +1,584 @@
+<header class="content__title">
+  <h1>Issue Tracker</h1>
+</header>
+
+<div class="card">
+  <div class="toolbar toolbar--inner">
+    <div class="toolbar__nav">
+      <a class="active" href="">Opened 25</a>
+      <a href="" class="hidden-sm-down">Responded 30</a>
+      <a href="">Closed 19</a>
+    </div>
+
+    <div class="actions">
+      <i class="actions__item zmdi zmdi-search" data-sa-action="toolbar-search-open" data-toggle="tooltip" data-title="Search"></i>
+
+      <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Tag">
+        <i class="zmdi zmdi-label-alt-outline" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-tag" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">All</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-tag" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Tag One</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-tag" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Tag Two</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-tag" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Tag Three</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Severity">
+        <i class="zmdi zmdi-info-outline" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-severity" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">All</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-severity" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Severe</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-severity" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">High</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-severity" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Medium</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-severity" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Low</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Project">
+        <i class="zmdi zmdi-book" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">All Projects</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Project One</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Project Two</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Project Three</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Project Four</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-project" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Project Five</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Assignee">
+        <i class="zmdi zmdi-account-circle" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Everyone</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">David Wilson</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">James Frank</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Natalie Sheth</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Christian Robu</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-assignee" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Wins Williamson</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Sort by">
+        <i class="zmdi zmdi-sort" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-sort" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Newest</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-sort" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Oldest</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-sort" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Most Commented</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-sort" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Least Commented</span>
+            </label>
+          </div>
+          <div class="dropdown-item">
+            <label class="custom-control custom-radio">
+              <input name="issue-sort" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Recently Updated</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar__search">
+      <input type="text" placeholder="Search for issues...">
+      <i class="toolbar__search__close zmdi zmdi-long-arrow-left" data-sa-action="toolbar-search-close"></i>
+    </div>
+  </div>
+
+  <div class="listview listview--bordered issue-tracker">
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/2.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate text-truncate">
+        <a class="listview__heading" href="">Ed porta ut justo vitae volutpat. Aliquam varius tortor non egestas blandit. Fusce in sem lectus</a>
+        <p>#148 Opened 2 Days ago by Louie Holmes</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-red">Issue</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 04
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/3.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Dulla vel metus scelerisque ante sollicitudin commodo purus odio</a>
+        <p>#132 Opened Yesterday by Joseph Hamilton</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-blue">Suggestion</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>19/11/2017 at 09:01
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 23
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <i class="avatar-char hidden-sm-down">K</i>
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Nunc dictum tortor nec orci tempor vehicula. Curabitur bibendum non dolor vel hendrerit.</a>
+        <p>#130 Opened on 10/11/2017 by Kason Sawyer</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-green">Optimization</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>10/11/2017 at 15:13
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 01
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <i class="avatar-char hidden-sm-down">T</i>
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
+        <p>#129 Opened on 05/11/2017 by Theodore Cotton</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-red">Issue</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>05/11/2017 at 19:00
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 04
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/1.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Suspendisse aliquet dapibus ornare.</a>
+        <p>#128 Opened on 22/10/2017 Days ago by Gary Schneider</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-red">Issue</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>22/10/2017 at 01:54
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 00
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <i class="avatar-char hidden-sm-down">J</i>
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
+        <p>#125 Opened on 12/09/2017 by Jonathan Kelly</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-orange">Discussion</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>12/09/2017 at 22:59
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 18
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/5.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Maecenas accumsan risus et enim tincidunt</a>
+        <p>#124 Opened on 12/09/2017 by Samuel Doyle</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-green">Optimization</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>12/09/2017 at 02:50
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 02
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/6.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Morbi sit amet nunc a nunc venenatis sagittis vitae lacinia dolor</a>
+        <p>#120 Opened on 30/08/2017 by Isaac Francis</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-cyan">Version 2.0</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>30/08/2017 at 01:32
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 10
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <img src="demo/img/contacts/7.jpg" class="listview__img hidden-sm-down" alt="">
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat quis metus non placerat. Aenean vestibulum, dolor nec tempus consectetur</a>
+        <p>#118 Opened on 10/07/2017 by Anders Gould</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-orange">Discussion</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 10
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listview__item">
+      <i class="avatar-char hidden-sm-down">L</i>
+
+      <div class="listview__content text-truncate">
+        <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
+        <p>#100 Opened on 01/07/2017 by Leo Macdonald</p>
+      </div>
+
+      <div class="issue-tracker__item">
+        <span class="issue-tracker__tag bg-indigo">Future</span>
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
+      </div>
+
+      <div class="issue-tracker__item hidden-lg-down">
+        <i class="zmdi zmdi-comment-alt"></i> 10
+      </div>
+
+      <div class="issue-tracker__item actions">
+        <div class="dropdown actions__item">
+          <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix m-4"></div>
+  </div>
+</div>

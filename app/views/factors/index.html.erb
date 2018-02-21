@@ -1,0 +1,46 @@
+<header class="content__title">
+  <h1>Rating Factor Setup</h1>
+
+  <div class="actions">
+    <a href="" class="actions__item zmdi zmdi-trending-up"></a>
+    <a href="" class="actions__item zmdi zmdi-check-all"></a>
+
+    <div class="dropdown actions__item">
+      <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="" class="dropdown-item">Refresh</a>
+        <a href="" class="dropdown-item">Manage Widgets</a>
+        <a href="" class="dropdown-item">Settings</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Work with rating factors</h4>
+    <h6 class="card-subtitle">Rating factors represent various aspects of ICO evaluation.</h6>
+
+    <div class="table-responsive">
+      <table id="data-table" class="table table-sm">
+        <thead class="thead-default">
+          <tr>
+            <th>Factor Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <% @factors.all.each do |f| %>
+          <tr class="myrow" id="<%= f.id %>">
+            <td><a href="/factors/<%= f.id %>/edit"><%= f.name %></td></a>
+          </tr>
+          <% end %>
+
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+

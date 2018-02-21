@@ -1,0 +1,66 @@
+<div class="content__inner">
+  <header class="content__title">
+    <h1>Coin Gallery</h1>
+
+    <div class="actions">
+      <a href="" class="actions__item zmdi zmdi-trending-up"></a>
+      <a href="" class="actions__item zmdi zmdi-check-all"></a>
+
+      <div class="dropdown actions__item">
+        <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a href="" class="dropdown-item">Refresh</a>
+          <a href="" class="dropdown-item">Manage Widgets</a>
+          <a href="" class="dropdown-item">Settings</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="toolbar__label"><span class="hidden-xs-down"></span> <%= Coin.count %> Total Coins</div>
+
+    <div class="actions">
+      <i class="actions__item zmdi zmdi-search" data-sa-action="toolbar-search-open"></i>
+      <a href="" class="actions__item zmdi zmdi-time"></a>
+      <div class="dropdown actions__item">
+        <i class="zmdi zmdi-sort" data-toggle="dropdown"></i>
+
+        <div class="dropdown-menu dropdown-menu-right">
+          <a href="" class="dropdown-item">Last Modified</a>
+          <a href="" class="dropdown-item">Name</a>
+          <a href="" class="dropdown-item">Size</a>
+        </div>
+      </div>
+      <a href="" class="actions__item zmdi zmdi-help-outline"></a>
+    </div>
+
+    <div class="toolbar__search">
+      <input type="text" placeholder="Search...">
+      <i class="toolbar__search__close zmdi zmdi-long-arrow-left" data-sa-action="toolbar-search-close"></i>
+    </div>
+  </div>
+
+  <div class="row photos">
+
+    <a href="/coins/1/edit" class="col-md-2 col-4">
+      <div class="lightbox__item photos__item">
+        <img src="/demo/img/coins/ethereum.jpg" alt="" />
+      </div>
+    </a>
+
+    <a href="coins/2/edit" class="col-md-2 col-4">
+      <div class="lightbox__item photos__item">
+        <img src="/demo/img/coins/bitcoin.jpg" alt="" />
+      </div>
+    </a>
+
+    <a href="coins/3/edit" class="col-md-2 col-4">
+      <div class="lightbox__item photos__item">
+        <img src="/demo/img/coins/litecoin.jpg" alt="" />
+      </div>
+    </a>
+
+
+  </div>
+</div>
