@@ -22,15 +22,34 @@ ActiveRecord::Schema.define(version: 20180301040000) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "chats", force: :cascade do |t|
+    t.integer  "from_id"
+    t.integer  "to_id"
+    t.text     "body"
+    t.string   "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "coins", force: :cascade do |t|
     t.string   "name"
-    t.string   "logo"
+    t.string   "description"
     t.string   "website"
     t.string   "github"
-    t.string   "whitepaper"
-    t.text     "description"
+    t.string   "rating"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.text     "action"
+    t.text     "details"
+    t.datetime "occurred_at"
+    t.integer  "admin_id"
+    t.integer  "eventable_id"
+    t.text     "eventable_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "factors", force: :cascade do |t|
@@ -40,8 +59,48 @@ ActiveRecord::Schema.define(version: 20180301040000) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "seeds", id: false, force: :cascade do |t|
-    t.string "version"
+  create_table "followers", force: :cascade do |t|
+    t.integer  "followable_id"
+    t.string   "followable_type"
+    t.integer  "admin_id"
+    t.string   "interest_level"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "notifications", force: :cascade do |t|
+    t.integer  "admin_id"
+    t.string   "body"
+    t.string   "state"
+    t.integer  "notifiable_id"
+    t.string   "notifiable_type"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "states", force: :cascade do |t|
+    t.string   "stateable_type"
+    t.string   "stateable_id"
+    t.string   "before"
+    t.string   "after"
+    t.string   "requester_id"
+    t.string   "approver_id"
+    t.string   "status"
+    t.date     "occurs_on"
+    t.date     "requested_on"
+    t.date     "replied_on"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["id"], name: "index_states_on_id", unique: true, using: :btree
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "tagable_type"
+    t.string   "tagable_id"
+    t.string   "name"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["id"], name: "index_tags_on_id", unique: true, using: :btree
   end
 
   create_table "users", force: :cascade do |t|

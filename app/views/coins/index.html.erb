@@ -45,19 +45,24 @@
 
     <% @coins.each do |c| %>
 
-    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
-      <div class="contacts__item">
-        <a href="/coins/<%= c.id %>/edit" class="col-md-3 col-6">
-          <img src="/images/coins/<%= c.name.downcase %>.jpg" alt="" />
-        </a>
+    <div class="col-xl-3 col-lg-4 col-sm-5 col-7">
+      <a href="/coins/<%= c.id %>/edit" class="col-md-3 col-6">
+        <div class="contacts__item pt-1" >
+          <div class="text-right"><button class="btn btn-danger btn--icon"></i><%= c.rating %></button></div>
+          <a href="" class="contacts__img">
+            <img src="/images/coins/<%= c.name.downcase %>.jpg" alt="">
+          </a>
 
-        <div class="contacts__info pt-5">
-          <strong></strong>
-          <small>email@email.com</small>
+
+          <button class="contacts__btn"><%= c.name.downcase %></button>
+
+          <div class="contacts__info pt-5">
+            <strong></strong>
+            <small><%= c.website %></small>
+          </div>
+
         </div>
-
-        <button class="contacts__btn"><%= c.name.downcase %></button>
-      </div>
+      </a>
     </div>
 
 
