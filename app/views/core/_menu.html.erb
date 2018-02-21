@@ -12,7 +12,7 @@
 
       <div class="dropdown-menu">
         <%= link_to("<i class='zmdi zmdi-account-circle'></i> &nbsp My Profile".html_safe, edit_user_path(current_user), class: 'dropdown-item') %>
-        <%= link_to("<i class='zmdi zmdi-settings'></i> &nbsp Settings".html_safe, destroy_user_session_path, method: :delete, class: 'dropdown-item') %>
+        <%= link_to("<i class='zmdi zmdi-settings'></i> &nbsp Settings".html_safe, destroy_user_session_path, class: 'dropdown-item') %>
         <%= link_to("<i class='zmdi zmdi-power'></i> &nbsp Sign Out".html_safe, destroy_user_session_path, method: :delete, class: 'dropdown-item') %>
       </div>
     </div>
