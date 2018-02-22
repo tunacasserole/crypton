@@ -2,4 +2,7 @@ Coin.create(name: 'Ethereum', website: 'www.ethereum.org', rating: '9', descript
 Coin.create(name: 'Bitcoin', website: 'www.bitcoin.org', rating:'7')
 Coin.create(name: 'Litecoin', website: 'www.litecoin.org', rating:'8')
 Coin.create(name: 'Tron', website: 'www.tron.org', rating:'6')
-Coin.create(name: 'Cardano', website: 'www.cardano.org', rating:'7')
+Coin.create(name: 'Cardano', website: 'www.cardanohub.org', rating:'7')
+Coin.create(name: 'SALT', website: 'www.saltlending.org', rating:'5.5')
+Coin.create(name: 'Ripple', website: 'www.ripple.com ', rating:'8.2')
+Coin.create(name: 'EOS', website: 'www.eos.com ', rating:'9')
