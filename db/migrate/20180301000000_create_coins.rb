@@ -4,6 +4,7 @@ class CreateCoins < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :description
       t.string :website
+      t.string :github
       t.string :rating
 
       t.timestamps
